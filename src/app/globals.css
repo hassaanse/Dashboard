@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  background-color: #f1f5f9;
+}
+
+.roundpropgrss{
+  height: 150px;
+  width: 150px;
+}
+
+/* Box.css */
+.box {
+  @apply bg-gray-200 rounded-lg p-6;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.box__title {
+  @apply font-semibold mb-4 text-gray-800;
+  font-size: 16px;
+}
+
+.box__value {
+  @apply text-2xl font-semibold text-gray-700;
+  display: flex;
+  align-items: baseline;
+}
+
+.box__change {
+  @apply text-green-500 text-base;
+  margin-left: 8px;
+  margin-right: 4px;
+}
+
+.box__unit {
+  @apply text-gray-500 text-base;
+  margin-left: 4px;
+}
