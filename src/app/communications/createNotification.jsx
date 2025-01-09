@@ -23,7 +23,7 @@ const CreateTopic = ({ HandleIsAddClose }) => {
         }
 
         try {
-            const response = await fetch('http://localhost:8000/campaign/CreateNotification', {
+            const response = await fetch('https://thekoi.ca/backened/campaign/CreateNotification', {
                 method: 'POST',
                 body: formData,
             });

@@ -56,7 +56,7 @@ export default function StickyHeadTable() {
   };
 
   const getData = () => {
-    fetch("http://localhost:8000/user/list")
+    fetch("https://thekoi.ca/backened/user/list")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -114,7 +114,7 @@ export default function StickyHeadTable() {
   };
 
   const deleteRow = (row) => {
-    fetch("http://localhost:8000/user/delete", {
+    fetch("https://thekoi.ca/backened/user/delete", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

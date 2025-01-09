@@ -120,7 +120,7 @@ export default function StickyHeadTable() {
     }
 
     const getData = () => {
-        fetch('http://localhost:8000/campaign/getAllCompaigns')
+        fetch('https://thekoi.ca/backened/campaign/getAllCompaigns')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -156,7 +156,7 @@ export default function StickyHeadTable() {
 
     // setDivCampId(divCampId)
 
-    fetch('http://localhost:8000/campaign/activated', {
+    fetch('https://thekoi.ca/backened/campaign/activated', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',
@@ -185,7 +185,7 @@ export default function StickyHeadTable() {
 
     setDivCampId(divCampId)
 
-    fetch('http://localhost:8000/campaign/deactivated', {
+    fetch('https://thekoi.ca/backened/campaign/deactivated', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',
@@ -216,7 +216,7 @@ export default function StickyHeadTable() {
     const title = "Watch Campaign "+{row};
     const body = "Complete watching this campaign to rank up!"
 
-    fetch('http://localhost:8000/campaign/CreateNotification', {
+    fetch('https://thekoi.ca/backened/campaign/CreateNotification', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',
@@ -283,7 +283,7 @@ export default function StickyHeadTable() {
     
   };
   const deleteRow = (row) => {
-    fetch('http://localhost:8000/campaign/deleteCompaign', {
+    fetch('https://thekoi.ca/backened/campaign/deleteCompaign', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',

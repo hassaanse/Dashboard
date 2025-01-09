@@ -86,7 +86,7 @@ export default function Dashboard() {
   const getfetchCampaignViews = async () => {
     try {
 
-      const response = await axios.get('http://localhost:8000/analytics/TotalViewsAllCampain');
+      const response = await axios.get('https://thekoi.ca/backened/analytics/TotalViewsAllCampain');
       setData( response.data);
       setLoading(false);
     } catch (err) {

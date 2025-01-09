@@ -85,7 +85,7 @@ export default function StickyHeadTable() {
 
     const getData = () => {
 
-        fetch('http://localhost:8000/campaign/notifications')
+        fetch('https://thekoi.ca/backened/campaign/notifications')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -150,7 +150,7 @@ export default function StickyHeadTable() {
   };
   const deleteRow = (row) => {
 
-    fetch('http://localhost:8000/campaign/deleteCompaign', {
+    fetch('https://thekoi.ca/backened/campaign/deleteCompaign', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',

@@ -22,7 +22,7 @@ const VideoGallery = ({ videos }) => {
           key={video.videoId}
           videoId={video.videoId}
           title={video.title}
-          path={'http://localhost:8000/'+video.path}
+          path={'https://thekoi.ca/backened/'+video.path}
           views={video.views}
         />
       ))}
@@ -38,7 +38,7 @@ const App = ({ campaignId, onBack }) => {
     // Fetch video data from API
     const fetchVideos = async () => {
       try {
-        const response = await fetch('http://localhost:8000/campaign/videowithID', {
+        const response = await fetch('https://thekoi.ca/backened/campaign/videowithID', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

@@ -66,7 +66,7 @@ const CampaignForm = ({ HandleIsAddClose }) => {
       }
       setFormDataLog(logEntries);
 
-      const response = await fetch('http://localhost:8000/campaign/createCampaigns', {
+      const response = await fetch('https://thekoi.ca/backened/campaign/createCampaigns', {
         method: 'POST',
         body: formData,
       });

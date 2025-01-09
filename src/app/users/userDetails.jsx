@@ -65,7 +65,7 @@ export default function UserDetailsForm({ HandleIsAddClose, initialRows }) {
         console.log('Submitting data:', data);
         if (rows && rows.hasOwnProperty('userName')) {
             console.log('Updating user:', rows.userName);
-            fetch('http://localhost:8000/api/user/update', {
+            fetch('https://thekoi.ca/backened/user/update', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -96,7 +96,7 @@ export default function UserDetailsForm({ HandleIsAddClose, initialRows }) {
             console.log('here is user type', uType);
             data.Type=uType;
             console.log('Adding new user', data );
-            fetch('http://localhost:8000/api/user/create', {
+            fetch('https://thekoi.ca/backened/user/create', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
