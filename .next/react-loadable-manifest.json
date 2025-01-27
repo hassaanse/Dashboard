@@ -1,121 +1,126 @@
 {
-  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {
-    "id": 35203,
+  "..\\node_modules\\next\\dist\\client\\components\\react-dev-overlay\\internal\\helpers\\use-websocket.js -> @vercel/turbopack-ecmascript-runtime/browser/dev/hmr-client/hmr-client.ts": {
+    "id": "..\\node_modules\\next\\dist\\client\\components\\react-dev-overlay\\internal\\helpers\\use-websocket.js -> @vercel/turbopack-ecmascript-runtime/browser/dev/hmr-client/hmr-client.ts",
     "files": [
-      "static/chunks/203.215f7ebb412294c3.js"
+      "static/chunks/_app-pages-browser_node_modules_next_dist_client_dev_noop-turbopack-hmr_js.js"
+    ]
+  },
+  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {
+    "id": "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_app",
+    "files": [
+      "static/chunks/node_modules_next_dist_pages__app_js.js"
     ]
   },
   "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_error": {
-    "id": 86218,
+    "id": "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_error",
     "files": [
-      "static/chunks/218.ee5bb437b51df9be.js"
+      "static/chunks/node_modules_next_dist_pages__error_js.js"
     ]
   },
   "..\\node_modules\\react-player\\lib\\ReactPlayer.js -> ./Preview": {
-    "id": 45946,
+    "id": "..\\node_modules\\react-player\\lib\\ReactPlayer.js -> ./Preview",
     "files": [
-      "static/chunks/reactPlayerPreview.15e4c468663ff62b.js"
+      "static/chunks/reactPlayerPreview.js"
     ]
   },
   "..\\node_modules\\react-player\\lib\\players\\index.js -> ./DailyMotion": {
-    "id": 82560,
+    "id": "..\\node_modules\\react-player\\lib\\players\\index.js -> ./DailyMotion",
     "files": [
-      "static/chunks/reactPlayerDailyMotion.a9a6c89cdfba6125.js"
+      "static/chunks/reactPlayerDailyMotion.js"
     ]
   },
   "..\\node_modules\\react-player\\lib\\players\\index.js -> ./Facebook": {
-    "id": 13737,
+    "id": "..\\node_modules\\react-player\\lib\\players\\index.js -> ./Facebook",
     "files": [
-      "static/chunks/reactPlayerFacebook.82a5c5c2df7039a3.js"
+      "static/chunks/reactPlayerFacebook.js"
     ]
   },
   "..\\node_modules\\react-player\\lib\\players\\index.js -> ./FilePlayer": {
-    "id": 73050,
+    "id": "..\\node_modules\\react-player\\lib\\players\\index.js -> ./FilePlayer",
     "files": [
-      "static/chunks/reactPlayerFilePlayer.4dadf98872bf4c1c.js"
+      "static/chunks/reactPlayerFilePlayer.js"
     ]
   },
   "..\\node_modules\\react-player\\lib\\players\\index.js -> ./Kaltura": {
-    "id": 597,
+    "id": "..\\node_modules\\react-player\\lib\\players\\index.js -> ./Kaltura",
     "files": [
-      "static/chunks/reactPlayerKaltura.f124db6646f39d7c.js"
+      "static/chunks/reactPlayerKaltura.js"
     ]
   },
   "..\\node_modules\\react-player\\lib\\players\\index.js -> ./Mixcloud": {
-    "id": 33082,
+    "id": "..\\node_modules\\react-player\\lib\\players\\index.js -> ./Mixcloud",
     "files": [
-      "static/chunks/reactPlayerMixcloud.90c100912cea931f.js"
+      "static/chunks/reactPlayerMixcloud.js"
     ]
   },
   "..\\node_modules\\react-player\\lib\\players\\index.js -> ./Mux": {
-    "id": 29825,
+    "id": "..\\node_modules\\react-player\\lib\\players\\index.js -> ./Mux",
     "files": [
-      "static/chunks/reactPlayerMux.3371dcc696882331.js"
+      "static/chunks/reactPlayerMux.js"
     ]
   },
   "..\\node_modules\\react-player\\lib\\players\\index.js -> ./SoundCloud": {
-    "id": 90865,
+    "id": "..\\node_modules\\react-player\\lib\\players\\index.js -> ./SoundCloud",
     "files": [
-      "static/chunks/reactPlayerSoundCloud.2312c6f25b1dc98a.js"
+      "static/chunks/reactPlayerSoundCloud.js"
     ]
   },
   "..\\node_modules\\react-player\\lib\\players\\index.js -> ./Streamable": {
-    "id": 77449,
+    "id": "..\\node_modules\\react-player\\lib\\players\\index.js -> ./Streamable",
     "files": [
-      "static/chunks/reactPlayerStreamable.aa1cb14cf9aac71a.js"
+      "static/chunks/reactPlayerStreamable.js"
     ]
   },
   "..\\node_modules\\react-player\\lib\\players\\index.js -> ./Twitch": {
-    "id": 21698,
+    "id": "..\\node_modules\\react-player\\lib\\players\\index.js -> ./Twitch",
     "files": [
-      "static/chunks/reactPlayerTwitch.8294e03bb3bec456.js"
+      "static/chunks/reactPlayerTwitch.js"
     ]
   },
   "..\\node_modules\\react-player\\lib\\players\\index.js -> ./Vidyard": {
-    "id": 61452,
+    "id": "..\\node_modules\\react-player\\lib\\players\\index.js -> ./Vidyard",
     "files": [
-      "static/chunks/reactPlayerVidyard.25ff721c75a61541.js"
+      "static/chunks/reactPlayerVidyard.js"
     ]
   },
   "..\\node_modules\\react-player\\lib\\players\\index.js -> ./Vimeo": {
-    "id": 11627,
+    "id": "..\\node_modules\\react-player\\lib\\players\\index.js -> ./Vimeo",
     "files": [
-      "static/chunks/reactPlayerVimeo.42292385ebb05bd2.js"
+      "static/chunks/reactPlayerVimeo.js"
     ]
   },
   "..\\node_modules\\react-player\\lib\\players\\index.js -> ./Wistia": {
-    "id": 11684,
+    "id": "..\\node_modules\\react-player\\lib\\players\\index.js -> ./Wistia",
     "files": [
-      "static/chunks/reactPlayerWistia.7adf61484f311b15.js"
+      "static/chunks/reactPlayerWistia.js"
     ]
   },
   "..\\node_modules\\react-player\\lib\\players\\index.js -> ./YouTube": {
-    "id": 75690,
+    "id": "..\\node_modules\\react-player\\lib\\players\\index.js -> ./YouTube",
     "files": [
-      "static/chunks/reactPlayerYouTube.269cb27c51c009e0.js"
+      "static/chunks/reactPlayerYouTube.js"
     ]
   },
   "app\\dashboard\\page.jsx -> ./charts/AreaChart": {
-    "id": 8706,
+    "id": "app\\dashboard\\page.jsx -> ./charts/AreaChart",
     "files": []
   },
   "app\\dashboard\\page.jsx -> ./charts/BubbleChart": {
-    "id": 17011,
+    "id": "app\\dashboard\\page.jsx -> ./charts/BubbleChart",
     "files": []
   },
   "app\\dashboard\\page.jsx -> ./charts/GeoChart": {
-    "id": 74652,
+    "id": "app\\dashboard\\page.jsx -> ./charts/GeoChart",
     "files": []
   },
   "app\\dashboard\\page.jsx -> ./charts/GeoChart copy": {
-    "id": 83131,
+    "id": "app\\dashboard\\page.jsx -> ./charts/GeoChart copy",
     "files": [
-      "static/chunks/4e6af11a.67398232bad3e8d8.js",
-      "static/chunks/131.b224214c52b256d1.js"
+      "static/chunks/_app-pages-browser_src_app_dashboard_charts_GeoChart_copy_jsx.js"
     ]
   },
   "app\\dashboard\\page.jsx -> ./charts/pieChart": {
-    "id": 93987,
+    "id": "app\\dashboard\\page.jsx -> ./charts/pieChart",
     "files": []
   }
 }

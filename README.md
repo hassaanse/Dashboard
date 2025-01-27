@@ -1,2 +1,2 @@
-# Compaign-Web
+# Campaign-Web
 Web dashboard repository of the project

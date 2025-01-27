@@ -93,7 +93,7 @@ function Layout(props) {
       </Toolbar>
       <Divider />
       <List>
-        {['Dashboard', 'Compaigns','Users','Communications'].map((text, index) => (
+        {['Dashboard', 'Campaigns','Users','Communications'].map((text, index) => (
           <ListItem key={text} disablePadding className={pathname.startsWith("/" + text.toLowerCase()) ? "text-sky-600 bg-slate-100" : "text-slate-700" } onClick={()=>{router.push("/" + text.toLowerCase())}}>
             <ListItemButton>
               <ListItemIcon className={pathname.startsWith("/" + text.toLowerCase()) ? "text-sky-600 bg-slate-100" : "text-slate-700" }>

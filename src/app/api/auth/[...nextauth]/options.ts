@@ -1,14 +1,72 @@
+// import type { NextAuthOptions } from "next-auth";
+// import CredentialsProvider from "next-auth/providers/credentials";
+// import axios from "axios";
+
+// export const options: NextAuthOptions = {
+//   secret: "VideoDashboardCampaign", // Replace with your secret
+
+//   providers: [
+//     CredentialsProvider({
+//       name: "Credentials",
+//       credentials: {
+//         username: {
+//           label: "Username:",
+//           type: "text",
+//           placeholder: "Enter Username",
+//         },
+//         password: {
+//           label: "Password:",
+//           type: "password",
+//           placeholder: "Enter Password",
+//         },
+//       },
+//       async authorize(credentials) {
+//         try {
+//           console.log("Authorizing with credentials:", credentials);
+
+//           const response = await axios.post("http://localhost:8000/admin/login", {
+//             email: credentials?.username,
+//             name: credentials?.username,
+//             password: credentials?.password,
+//           });
+
+//           console.log("API response:", response.data);
+
+//           // Check response validity
+//           if (response.status === 200 && response.data?.user) {
+//             return response.data.user; // Successful login
+//           } else {
+//             console.error("Invalid credentials provided.");
+//             throw new Error("Invalid username or password");
+//           }
+//         } catch (error) {
+//           if (axios.isAxiosError(error)) {
+//             console.error("API error:", error.response?.data || error.message);
+//             throw new Error(error.response?.data?.message || "Internal server error");
+//           } else {
+//             console.error("Unexpected error:", error);
+//             throw new Error("An unexpected error occurred during authentication");
+//           }
+//         }
+//       },
+//     }),
+//   ],
+
+//   pages: {
+//     signIn: "/auth/signin", // Customize as needed
+//     error: "/auth/error",   // Error page
+//   },
+// };
+
+
 import type { NextAuthOptions } from "next-auth";
-import GitHubProvider from "next-auth/providers/github";
 import CredentialsProvider from "next-auth/providers/credentials";
-import GoogleProvider from "next-auth/providers/google";
+import axios from "axios";
 
 export const options: NextAuthOptions = {
-
-  secret: 'VideoDashboardCompaign',
+  secret: "VideoDashboardCampaign", // Replace with your secret
 
   providers: [
-  
     CredentialsProvider({
       name: "Credentials",
       credentials: {
@@ -24,21 +82,46 @@ export const options: NextAuthOptions = {
         },
       },
       async authorize(credentials) {
-        // This is where you need to retrieve user data
-        // to verify with credentials
-        // Docs: https://next-auth.js.org/configuration/providers/credentials
-        const user = { id: "42", name: "VideoDashboard", password: "10Compaigns/day" };
+        try {
+          console.log("Authorizing with credentials:", credentials);
 
-        if (
-          credentials?.username === user.name 
-          &&
-          credentials?.password ===  user.password
-        ) {
-          return user;
-        } else {
-          return Promise.reject(new Error("Invalid username or password"));;
+          const response = await axios.post("http://localhost:8000/admin/login", {
+            email: credentials?.username, // Use the username field as email
+            password: credentials?.password,
+          });
+
+          console.log("API response:", response.data);
+
+          // Check response validity
+          if (response.status === 200 && response.data) {
+            // Map the API response to the user object expected by NextAuth
+            const user = {
+              id: response.data.id,
+              name: response.data.username,
+              email: credentials?.username, // Use the provided username as email
+              role: response.data.role,
+              token: response.data.token, // Include the token in the user object
+            };
+            return user; // Successful login
+          } else {
+            console.error("Invalid credentials provided.");
+            throw new Error("Invalid username or password");
+          }
+        } catch (error) {
+          if (axios.isAxiosError(error)) {
+            console.error("API error:", error.response?.data || error.message);
+            throw new Error(error.response?.data?.message || "Internal server error");
+          } else {
+            console.error("Unexpected error:", error);
+            throw new Error("An unexpected error occurred during authentication");
+          }
         }
       },
     }),
   ],
+
+  pages: {
+    signIn: "/auth/signin", // Customize as needed
+    error: "/auth/error",   // Error page
+  },
 };

@@ -150,7 +150,7 @@ export default function StickyHeadTable() {
   };
   const deleteRow = (row) => {
 
-    fetch('https://thekoi.ca/backened/campaign/deleteCompaign', {
+    fetch('https://thekoi.ca/backened/campaign/deleteCampaign', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',

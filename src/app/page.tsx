@@ -151,6 +151,10 @@ export default function Home() {
                     Sign in
                   </button>
                 </div>
+                <p className="mt-10 text-center text-sm text-gray-500">
+              Create an Account!
+              <span onClick={()=>{router.push("/signup")}} className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500 cursor-pointer">SignUp here</span>
+            </p>
               </form>
             </div>
           </div>
