@@ -594,7 +594,7 @@ import { SnackbarProvider, useSnackbar, enqueueSnackbar } from 'notistack';
 import ReactPlayer from 'react-player';
 import Modal from '@mui/material/Modal';
 
-import VideoPage from '../Videos/page';
+import VideoPage from './Video';
 
 import { styled } from "@mui/material/styles";
 
