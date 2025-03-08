@@ -851,7 +851,7 @@ export default function StickyHeadTable({ onBack }) {
           <>
 
             {addUser  ? (
-              <User Details HandleIsAddClose={HandleIsAddClose} />
+              <UserDetails Details HandleIsAddClose={HandleIsAddClose} />
             ) : (
               <>
                 <h2 className="font-bold mb-4">Campaigns</h2>

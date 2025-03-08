@@ -276,7 +276,7 @@ const SignUpForm = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:8000/admin/signup", {
+      const response = await axios.post("https://thekoi.ca/backened/admin/signup", {
         name,
         email,
         password,

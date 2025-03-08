@@ -78,10 +78,14 @@ function Layout(props) {
     console.log('Session User ', user);
   }
 
-  const userLogout = () => {
-    signOut();
-  }
+  // const userLogout = () => {
+  //   signOut();
+  // }
 
+  const userLogout = async () => {
+    await signOut({ redirect: false }); // Prevent NextAuth from redirecting to its default page
+    router.push("https://thekoi.ca/"); // Redirect to your custom URL
+  };
 
   const drawer = (
     <div>

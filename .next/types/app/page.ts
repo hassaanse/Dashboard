@@ -1,4 +1,4 @@
-// File: C:\Users\hassa\Desktop\Currently Running Campaign Project Backened and frontened\Dashboard-main\Dashboard-main\src\app\page.tsx
+// File: C:\Users\Administrator\Desktop\Dashboard-main\Dashboard-main\Dashboard-main\src\app\page.tsx
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

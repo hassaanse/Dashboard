@@ -85,7 +85,10 @@ export const options: NextAuthOptions = {
         try {
           console.log("Authorizing with credentials:", credentials);
 
-          const response = await axios.post("http://localhost:8000/admin/login", {
+          // const response = await axios.post("https://thekoi.ca/backened/admin/login",
+          const response = await axios.post("http://localhost:8000/admin/login",
+          
+          {
             email: credentials?.username, // Use the username field as email
             password: credentials?.password,
           });
